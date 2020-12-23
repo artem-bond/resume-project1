@@ -1,3 +1,266 @@
+@media (max-width: 960px) {
+  .resume__projects-border {
+    display: none;
+  }
+}
+
+ul, ol {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5 {
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.resume {
+  background-color: #f5f7fa;
+  padding: 40px;
+}
+
+.resume__row {
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.resume__sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 29vw;
+          flex: 0 0 29vw;
+  background-color: #1e2939;
+  color: #ffffff;
+}
+
+.resume__sidebar-image {
+  margin-top: 40px;
+}
+
+.resume__sidebar-image-1 {
+  max-width: 100%;
+}
+
+.resume__sidebar-row {
+  padding: 40px;
+}
+
+.resume__contacts {
+  margin-bottom: 40px;
+}
+
+.resume__title {
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.resume__contacts-tel {
+  position: relative;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: calc(10px + 0.35vw);
+  line-height: 24px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.resume__contacts-tel-letter {
+  text-transform: uppercase;
+  font-family: "Montserrat - Bold";
+  margin-right: 5px;
+}
+
+.resume__contacts-mail {
+  position: relative;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: calc(10px + 0.35vw);
+  line-height: 24px;
+}
+
+.resume__contacts-mail-letter {
+  text-transform: uppercase;
+  font-family: "Montserrat - Bold";
+  margin-right: 5px;
+}
+
+.resume__skills {
+  margin-bottom: 40px;
+}
+
+.resume__skills-list {
+  line-height: 24px;
+  text-align: left;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.resume__skills-list-item {
+  position: relative;
+  list-style-type: none;
+  font-size: calc(10px + 0.35vw);
+}
+
+.resume__skills-list-item::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ff6b08;
+  bottom: 7px;
+  left: -17px;
+}
+
+.resume__main-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 110px 90px;
+}
+
+.resume__about-me {
+  margin-bottom: 65px;
+}
+
+.resume__about-me-specialty-title {
+  font-size: calc(10px + 0.35vw);
+  line-height: 24px;
+  margin-bottom: 23px;
+}
+
+.resume__about-me-name-title {
+  font-size: 45px;
+  font-size: calc(11px + 3.30vw);
+  line-height: 89px;
+}
+
+.resume__about-me-text {
+  font-size: calc(10px + 0.35vw);
+  line-height: 24px;
+  color: #595959;
+  margin-top: 24px;
+}
+
+.resume__projects {
+  margin-bottom: 55px;
+}
+
+.resume__row-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  color: #595959;
+}
+
+.resume__projects-list {
+  list-style-type: decimal;
+}
+
+.resume__projects-list-item {
+  font-size: calc(10px + 0.35vw);
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 17px;
+}
+
+.resume__projects-list-item-link {
+  color: #595959;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.resume__projects-border-item {
+  font-size: calc(10px + 0.35vw);
+  width: 7.8vw;
+  height: 21px;
+  border-bottom: 1px dotted #a8a8a8;
+}
+
+.resume__projects-text {
+  line-height: 24px;
+  font-size: calc(10px + 0.35vw);
+}
+
+.resume__projects-text-brackets {
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+}
+
+.resume__company-title {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+.resume__company-title-text {
+  color: #ff6b08;
+}
+
+.resume__company-subtitle {
+  position: relative;
+  color: #a8a8a8;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+  margin-bottom: 7px;
+}
+
+.resume__vertical-bar {
+  font-size: calc(10px + 0.35vw);
+  color: #000000;
+}
+
+.resume__work-experience-list {
+  list-style-type: disc;
+  color: #595959;
+  font-size: calc(10px + 0.35vw);
+  line-height: 24px;
 }
