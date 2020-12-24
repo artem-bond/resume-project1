@@ -1,28 +1,33 @@
-
 @media (max-width: 960px) {
-	.resume__projects-border{
-			display: none;
-		}
+	.resume__projects-border {
+		display: none;
+	}
 }
 
 $font-size: calc(10px + 0.35vw);
-$font-size-name: calc(11px + 3.30vw);
+$font-size-name: calc(11px + 3.3vw);
 $font-color: #595959;
+$line-height: 24px;
 
-ul,ol{
+ul,
+ol {
 	margin-block-start: 0;
 	margin-block-end: 0;
 	padding-inline-start: 0px;
 	list-style-type: none;
 }
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
 	margin-block-start: 0px;
-   margin-block-end: 0px;
+	margin-block-end: 0px;
 }
 
-body{
-	font-family: 'Montserrat', sans-serif;
+body {
+	font-family: "Montserrat", sans-serif;
 }
 
 .wrapper {
@@ -41,239 +46,235 @@ body{
 	flex: 1 1 auto;
 }
 .resume {
-		background-color: #f5f7fa;
+	background-color: #f5f7fa;
+	padding: 40px;
+	&__row {
+		max-width: 1200px;
+		margin: 0 auto;
+		box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+		background-color: #ffffff;
+		display: flex;
+	}
+
+	&__sidebar {
+		flex: 0 0 29vw;
+		background-color: #1e2939;
+		color: #ffffff;
+	}
+
+	&__sidebar-image {
+		margin-top: 40px;
+	}
+
+	&__sidebar-image-1 {
+		max-width: 100%;
+	}
+
+	&__sidebar-row {
 		padding: 40px;
-		&__row {
-			max-width: 1200px;
-			margin: 0 auto;
-			box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
-			background-color: #ffffff;
-			display: flex;
-		}
+	}
 
-		&__sidebar {
-			flex: 0 0 29vw;
-			background-color: #1e2939;
-			color: #ffffff;
-		}
+	&__contacts {
+		margin-bottom: 40px;
+	}
 
-		&__sidebar-image {			
-			margin-top: 40px;
-		}
+	&__title {
+		font-size: 22px;
+		line-height: $line-height;
+		margin-bottom: 10px;
+	}
 
-		&__sidebar-image-1{
-			max-width: 100%;
-		}
+	&__contacts-title {
+	}
 
-		&__sidebar-row {
-			padding: 40px;
-		}
+	&__contacts-tel {
+		position: relative;
+		opacity: 0.5;
+		color: #ffffff;
+		font-size: $font-size;
+		line-height: $line-height;
+		text-align: left;
+		text-decoration: none;
+	}
 
-		&__contacts {
-			margin-bottom: 40px;
-		}
+	&__contacts-tel-letter {
+		text-transform: uppercase;
+		font-family: "Montserrat - Bold";
+		margin-right: 5px;
+	}
 
-		&__title{
-			font-size: 22px;
-			line-height: 24px;
-			margin-bottom: 10px;
-		}
-		
-		&__contacts-title {
-		}
+	&__contacts-mail {
+		position: relative;
+		opacity: 0.5;
+		color: #ffffff;
+		font-size: $font-size;
+		line-height: $line-height;
+	}
 
-		&__contacts-tel {
-			position: relative;
-			opacity: 0.5;
-			color: #ffffff;
-			font-size: $font-size;
-			line-height: 24px;
-			text-align: left;
-			text-decoration: none;
-		}
+	&__contacts-mail-letter {
+		text-transform: uppercase;
+		font-family: "Montserrat - Bold";
+		margin-right: 5px;
+	}
 
-		&__contacts-tel-letter {
-			text-transform:uppercase;
-			font-family: "Montserrat - Bold";
-			margin-right: 5px;
-		}
+	&__skills {
+		margin-bottom: 40px;
+	}
 
-		&__contacts-mail {
-			position: relative;
-			opacity: 0.5;
-			color: #ffffff;
-			font-size: $font-size;
-			line-height: 24px;
-		}
+	&__skills-title {
+	}
 
-		&__contacts-mail-letter {
-			text-transform:uppercase;
-			font-family: "Montserrat - Bold";
-			margin-right: 5px;
-		}
+	&__skills-list {
+		line-height: $line-height;
+		text-align: left;
+		padding-inline-start: 20px;
+	}
 
-		&__skills {
-			margin-bottom: 40px;
+	&__skills-list-item {
+		position: relative;
+		list-style-type: none;
+		font-size: $font-size;
+		&::before {
+			content: "";
+			display: block;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			position: absolute;
+			background-color: #ff6b08;
+			bottom: 7px;
+			left: -17px;
 		}
+	}
 
-		&__skills-title {
-		}
+	&__main-info {
+		flex: 1 1 auto;
+		padding: 110px 90px;
+	}
 
-		&__skills-list {
-			line-height: 24px;
-			text-align: left;
-			padding-inline-start: 20px;
-		}
+	&__about-me {
+		margin-bottom: 65px;
+	}
 
-		&__skills-list-item {
-			position: relative;
-			list-style-type: none;
-			font-size: $font-size;
-			&::before{
-				content: "";
-				display: block;
-				width: 5px;
-				height: 5px;
-				border-radius: 50%;
-				position: absolute;
-				background-color: #ff6b08;
-				bottom: 7px;
-				left: -17px;
-			}
-		}
+	&__about-me-specialty-title {
+		font-size: $font-size;
+		line-height: 24px;
+		margin-bottom: 23px;
+	}
 
-		&__main-info {
-			flex: 1 1 auto;
-			padding: 110px 90px;
-		}
+	&__about-me-name-title {
+		font-size: 45px;
+		font-size: $font-size-name;
+		line-height: 89px;
+	}
 
-		&__about-me {
-			margin-bottom: 65px;
-		}
+	&__about-me-text {
+		font-size: $font-size;
+		line-height: $line-height;
+		color: $font-color;
+		margin-top: 24px;
+	}
 
-		&__about-me-specialty-title {
-			font-size: $font-size;
-			line-height: 24px;
-			margin-bottom: 23px;
-		}
+	&__projects {
+		margin-bottom: 55px;
+	}
 
-		&__about-me-name-title {
-			font-size: 45px;
-			font-size: $font-size-name;
-			line-height: 89px;
-		}
+	&__row-projects {
+		display: flex;
+		flex: 0 1 33.333%;
+		color: $font-color;
+	}
 
-		&__about-me-text {
-			font-size: $font-size;
-			line-height: 24px;
-			color: $font-color;
-			margin-top: 24px;
-		}
+	&__projects-list {
+		list-style-type: decimal;
+	}
 
-		&__projects {
-			margin-bottom: 55px;
-		}
+	&__projects-list-item {
+		font-size: $font-size;
+		line-height: $line-height;
+		font-weight: 700;
+		color: #000000;
+		margin-left: 17px;
+	}
 
-		&__row-projects {
-			display:flex;
-			flex: 0 1 33.333%;
-			color: $font-color;
-		}
+	&__projects-list-item-link {
+		color: $font-color;
+		text-decoration: none;
+		font-weight: 400;
+	}
 
-		&__projects-list {
-			list-style-type: decimal;
-		}
+	&__projects-border {
+	}
 
-		&__projects-list-item {
-			font-size: $font-size;
-			line-height: 24px;
-			font-weight: 700;
-			color: #000000;
-			margin-left: 17px;
-		}
+	&__projects-border-item {
+		font-size: $font-size;
+		width: 7.8vw;
+		height: 21px;
+		border-bottom: 1px dotted #a8a8a8;
+	}
 
-		&__projects-list-item-link {
-			color: $font-color;
-			text-decoration: none;
-			font-weight: 400;
-		}
+	&__projects-text {
+		line-height: $line-height;
+		font-size: $font-size;
+	}
 
-		&__projects-border{
-		}
-		
-		&__projects-border-item{
-			font-size: $font-size;
-			width: 7.8vw;
-			height: 21px;
-			border-bottom: 1px dotted #a8a8a8;
-		}
+	&__projects-text-item {
+	}
 
-		&__projects-text {
-			line-height: 24px;
-			font-size: $font-size;
-		}
+	&__projects-text-brackets {
+		color: #000000;
+		font-weight: 700;
+		letter-spacing: 0.42px;
+	}
 
-		&__projects-text-item {
-			
-		}
-		
-		&__projects-text-brackets {
-			color: #000000;
-			font-weight: 700;
-			letter-spacing: 0.42px;
-		}
+	&__work-experience {
+		margin-bottom: 55px;
+	}
 
-		&__work-experience {
-		}
+	&__work-experience-title {
+	}
 
-		&__work-experience-title {
-		}
+	&__company {
+	}
 
-		&__company {
-		}
+	&__company-title {
+		font-size: 16px;
+		line-height: $line-height;
+		margin-top: 10px;
+		margin-bottom: 7px;
+	}
 
-		&__company-title {
-			font-size: 16px;
-			line-height: 24px;
-			margin-top: 10px;
-			margin-bottom: 7px;
-		}
+	&__title-text {
+		color: #ff6b08;
+	}
 
-		&__company-title-text {
-			color: #ff6b08;
-		}
+	&__company-subtitle {
+		position: relative;
+		color: #a8a8a8;
+		font-size: 12px;
+		line-height: $line-height;
+		letter-spacing: 0.36px;
+		margin-bottom: 7px;
+	}
 
-		&__company-subtitle {
-			position: relative;
-			color: #a8a8a8;
-			font-size: 12px;
-			line-height: 24px;
-			letter-spacing: 0.36px;
-			margin-bottom: 7px;
-			
-		}
+	&__vertical-bar {
+		font-size: $font-size;
+		color: #000000;
+	}
 
-		&__vertical-bar{
-			font-size: $font-size;
-			color: #000000;
-		}
+	&__work-experience-list {
+		list-style-type: disc;
+		color: $font-color;
+		font-size: $font-size;
+		line-height: $line-height;
+	}
 
-		&__work-experience-list {
-			list-style-type: disc;
-			color: $font-color;
-			font-size: $font-size;
-			line-height: 24px;
-		}
+	&__work-experience-list-item {
+	}
 
-		&__work-experience-list-item {
-		}
-
-		&__education {
-		}
-
-		&__education-title {
-		}
-
-		&__education-subtitle {
-		}
+	&__education-title-text {
+		font-size: $font-size;
+		line-height: $line-height;
+		margin-bottom: 7px;
+	}
 }
